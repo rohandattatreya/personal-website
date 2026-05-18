@@ -1,0 +1,17 @@
+[
+  {
+    "year": "2026",
+    "event": "Developing Macro Financial Dashboard",
+    "description": "Building a full-stack containerized dashboard aggregating macroeconomic data from FRED, SEC EDGAR, and Treasury."
+  },
+  {
+    "year": "2025",
+    "event": "Focused on Capital Markets & ML",
+    "description": "Deepened expertise in quantitative development and risk management."
+  },
+  {
+    "year": "2024",
+    "event": "Started Professional Journey",
+    "description": "Began applying machine learning techniques to financial datasets."
+  }
+]

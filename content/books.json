@@ -1,0 +1,28 @@
+{
+  "toRead": [
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "cover": "/images/books/placeholder.png"
+    },
+    {
+      "title": "The Man Who Solved the Market",
+      "author": "Gregory Zuckerman",
+      "cover": "/images/books/placeholder.png"
+    }
+  ],
+  "alreadyRead": [
+    {
+      "title": "Flash Boys",
+      "author": "Michael Lewis",
+      "cover": "/images/books/placeholder.png",
+      "rating": 5
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "cover": "/images/books/placeholder.png",
+      "rating": 4
+    }
+  ]
+}

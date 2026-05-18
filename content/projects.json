@@ -1,0 +1,16 @@
+{
+  "featured": [
+    {
+      "name": "Macro Financial Dashboard",
+      "description": "Full-stack containerized dashboard aggregating macroeconomic data from FRED, SEC EDGAR, and Treasury.",
+      "techStack": ["Next.js", "FastAPI", "Docker", "Python"],
+      "githubUrl": "https://github.com/rohandattatreya/Dashboard",
+      "liveUrl": null,
+      "image": "/images/projects/placeholder.png"
+    }
+  ],
+  "repos": [
+    "repo-name-1",
+    "repo-name-2"
+  ]
+}

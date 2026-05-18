@@ -1,0 +1,32 @@
+{
+  "experience": [
+    {
+      "title": "Quantitative Developer",
+      "company": "Company Name",
+      "location": "New York, NY",
+      "startDate": "2024-01",
+      "endDate": "Present",
+      "description": "Developing robust financial models and integrating machine learning into trading strategies.",
+      "bullets": [
+        "Built a full-stack macro financial dashboard.",
+        "Implemented data pipelines for FRED and SEC EDGAR."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Degree Program",
+      "institution": "University Name",
+      "location": "Location",
+      "startDate": "2020-09",
+      "endDate": "2024-05",
+      "description": "Focus on quantitative finance and machine learning."
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "JavaScript", "SQL", "C++"],
+    "frameworks": ["React", "Next.js", "FastAPI", "Pandas", "PyTorch"],
+    "tools": ["Docker", "Git", "Linux", "AWS"],
+    "domains": ["Capital Markets", "Risk Management", "Machine Learning", "Quantitative Research"]
+  }
+}
