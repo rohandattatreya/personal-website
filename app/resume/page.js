@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import resumeData from '../../content/resume.json';
 
 function formatDate(value) {
@@ -36,6 +38,9 @@ function renderLabeledList(items) {
 }
 
 export default function Resume() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const hasResumePdf = fs.existsSync(path.join(process.cwd(), 'public', 'resume.pdf'));
+  const resumePdfHref = `${basePath}/resume.pdf`;
   const skillSections = [
     { title: 'Modeling', items: resumeData.skills.modeling || [] },
     { title: 'Software Proficiency', items: resumeData.skills.software || [] },
@@ -48,18 +53,32 @@ export default function Resume() {
     <div style={{ padding: '2rem 0', maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', marginTop: '2rem' }}>
         <h1 style={{ margin: 0 }}>Resume</h1>
-        <a
-          href="/resume.pdf"
-          className="card"
-          style={{
-            padding: '0.5rem 1rem',
-            display: 'inline-block',
-            fontSize: '0.9rem',
-            color: 'var(--accent-color)'
-          }}
-        >
-          Download PDF
-        </a>
+        {hasResumePdf ? (
+          <a
+            href={resumePdfHref}
+            className="card"
+            style={{
+              padding: '0.5rem 1rem',
+              display: 'inline-block',
+              fontSize: '0.9rem',
+              color: 'var(--accent-color)'
+            }}
+          >
+            Download PDF
+          </a>
+        ) : (
+          <span
+            className="card"
+            style={{
+              padding: '0.5rem 1rem',
+              display: 'inline-block',
+              fontSize: '0.9rem',
+              color: 'var(--text-muted)'
+            }}
+          >
+            PDF coming soon
+          </span>
+        )}
       </div>
 
       <section className="mb-4">
