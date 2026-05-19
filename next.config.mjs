@@ -11,7 +11,7 @@ const nextConfig = {
   ...(basePath
     ? {
         basePath,
-        assetPrefix: `${basePath}/`,
+        assetPrefix: basePath,
       }
     : {}),
   trailingSlash: true,

@@ -26,9 +26,9 @@ This repository is configured for static export (`output: 'export'`) and deploys
 
 ### URL modes
 
-- **Project site** (`https://rohandattatreya.github.io/personal-website`)
+- **Project site** (`https://username.github.io/repository-name`)
   - Automatically handled in GitHub Actions by setting `basePath` and `assetPrefix` from `GITHUB_REPOSITORY`.
-- **User/Org site** (`https://rohandattatreya.github.io`) or custom domain
+- **User/Org site** (`https://username.github.io`) or custom domain
   - No repo subpath prefix is added.
 
 ### Required GitHub setting
