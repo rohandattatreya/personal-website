@@ -1,6 +1,14 @@
 import resumeData from '../../content/resume.json';
 
 export default function Resume() {
+  const skillSections = [
+    { title: 'Financial Modeling & Analysis', items: resumeData.skills.modeling },
+    { title: 'Software', items: resumeData.skills.software },
+    { title: 'Certifications', items: resumeData.skills.certifications },
+    { title: 'Associations', items: resumeData.skills.associations },
+    { title: 'Languages', items: resumeData.skills.languages },
+  ].filter((section) => section.items && section.items.length > 0);
+
   return (
     <div style={{ padding: '2rem 0', maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', marginTop: '2rem' }}>
@@ -20,6 +28,18 @@ export default function Resume() {
       </div>
 
       <section className="mb-4">
+        <div className="card">
+          <h2 className="section-title" style={{ marginTop: 0, marginBottom: '1rem' }}>
+            {resumeData.personal.name}
+          </h2>
+          <div style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
+            {resumeData.personal.location} · {resumeData.personal.phone} · {resumeData.personal.email}
+          </div>
+          <p style={{ margin: 0 }}>{resumeData.personal.summary}</p>
+        </div>
+      </section>
+
+      <section className="mb-4">
         <h2 className="section-title" style={{ marginTop: '2rem' }}>Experience</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           {resumeData.experience.map((exp, index) => (
@@ -34,7 +54,7 @@ export default function Resume() {
                   <div>{exp.location}</div>
                 </div>
               </div>
-              <p style={{ marginBottom: '1rem' }}>{exp.description}</p>
+              {exp.description && <p style={{ marginBottom: '1rem' }}>{exp.description}</p>}
               {exp.bullets && exp.bullets.length > 0 && (
                 <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-muted)' }}>
                   {exp.bullets.map((bullet, i) => (
@@ -72,38 +92,16 @@ export default function Resume() {
         <h2 className="section-title">Skills</h2>
         <div className="card">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
-            <div>
-              <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Languages</h4>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {resumeData.skills.languages.map((skill, index) => (
-                  <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Frameworks</h4>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {resumeData.skills.frameworks.map((skill, index) => (
-                  <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Tools</h4>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {resumeData.skills.tools.map((skill, index) => (
-                  <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Domains</h4>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {resumeData.skills.domains.map((skill, index) => (
-                  <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
-                ))}
-              </ul>
-            </div>
+            {skillSections.map((section) => (
+              <div key={section.title}>
+                <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>{section.title}</h4>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                  {section.items.map((skill, index) => (
+                    <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
