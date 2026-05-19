@@ -1,5 +1,5 @@
 const repository = process.env.GITHUB_REPOSITORY ?? '';
-const repositoryName = repository.split('/')[1] ?? '';
+const [, repositoryName = ''] = repository.split('/');
 const isUserOrOrgSite = repositoryName.endsWith('.github.io');
 const basePath = repositoryName && !isUserOrOrgSite ? `/${repositoryName}` : '';
 
