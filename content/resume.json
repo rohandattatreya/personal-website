@@ -24,7 +24,7 @@
       ]
     },
     {
-      "title": "Associate – Intern",
+      "title": "Associate - Intern",
       "company": "Incorrys",
       "location": "Calgary, Alberta",
       "startDate": "2024-06",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "title": "Advisor (Consultant) – Consulting Group",
+      "title": "Advisor (Consultant) - Consulting Group",
       "company": "Solomon Associates",
       "location": "Dallas, TX",
       "startDate": "2020-10",
@@ -47,28 +47,28 @@
         "Participated in to development of a New Projects OPEX Estimator, enhancing project cost accuracy and enabling the successful launch of a new product line at Solomon.",
         "Developed data models and contributed to KPI monitoring tools for Integrated and National Oil Companies, enabling data-driven capex allocation, and optimizing financial performance.",
         "Worked with National Oil Companies and developed models to analyze performance monitoring solutions for greenhouse gas emission optimization.",
-        "Created a consolidated datasets of Upstream KPI’s for Solomon’s Offshore Study. Standardized and consolidated proprietary and public data from EIA, Argus/Platts, along with data collected from clients in raw form, which is to be used in Solomon’s benchmarking study.",
+        "Created a consolidated datasets of Upstream KPI's for Solomon's Offshore Study. Standardized and consolidated proprietary and public data from EIA, Argus/Platts, along with data collected from clients in raw form, which is to be used in Solomon's benchmarking study.",
         "Assisted the refining team in preparing for the Solomon Fuel Study, which is the key revenue generator for the firm. Proposed and implemented solutions to digitize and automate data collection process to improve margins by 3% by reducing both internal and external costs, allowing Solomon to reduce costs during a challenging macro environment."
       ]
     },
     {
-      "title": "Data Engineering Consultant – Digital Transformation",
+      "title": "Data Engineering Consultant - Digital Transformation",
       "company": "Solomon Associates",
       "location": "Dallas, TX",
       "startDate": "2019-07",
       "endDate": "2020-10",
       "description": "",
       "bullets": [
-        "Collaborated with SMEs from various sectors of the oil and gas value chain (Upstream, midstream, downstream, and economic planning) to design and create monthly performance monitoring web application hosted on AWS for one of the world’s largest national oil companies.",
-        "Assisted in developed of data pipelines and calculation engines used to calculate proprietary KPI’s using Solomon’s proprietary model in accordance with best practices to optimize unit performance.",
+        "Collaborated with SMEs from various sectors of the oil and gas value chain (Upstream, midstream, downstream, and economic planning) to design and create monthly performance monitoring web application hosted on AWS for one of the world's largest national oil companies.",
+        "Assisted in developed of data pipelines and calculation engines used to calculate proprietary KPI's using Solomon's proprietary model in accordance with best practices to optimize unit performance.",
         "Analyzed crude oil assays to determine optimal selection of crude to forecast demand and price for refineries depending on their configuration.",
-        "Developed and delivered dynamic crude pricing models used in Solomon’s benchmarking study.",
-        "Traveled Internationally to client site and consulted with NOC’s and collected data used to optimize refinery and workforce performance. Presented findings and recommendations to the Executive Committee, and other decision makers.",
+        "Developed and delivered dynamic crude pricing models used in Solomon's benchmarking study.",
+        "Traveled Internationally to client site and consulted with NOC's and collected data used to optimize refinery and workforce performance. Presented findings and recommendations to the Executive Committee, and other decision makers.",
         "Assisted in automation of ETL process as part of ongoing digital transformation initiative at Solomon, as the firm transitions from on prem to AWS."
       ]
     },
     {
-      "title": "Intern: Strategic Energy Analyst – Consulting Group",
+      "title": "Intern: Strategic Energy Analyst - Consulting Group",
       "company": "Solomon Associates",
       "location": "Dallas, TX",
       "startDate": "2019-01",
@@ -90,7 +90,7 @@
       "location": "Nanaimo, BC",
       "startDate": "",
       "endDate": "2024",
-      "description": ""
+      "description": "Class of 2024"
     },
     {
       "degree": "Bachelor of Science in Petroleum and Natural Gas Engineering",
@@ -98,7 +98,7 @@
       "location": "State College, PA",
       "startDate": "",
       "endDate": "2018",
-      "description": ""
+      "description": "Class of 2018"
     }
   ],
   "skills": {
@@ -113,16 +113,41 @@
       "Working knowledge SQL"
     ],
     "certifications": [
-      "IFIC",
-      "Financial Risk Management (FRM) - Level 1",
-      "Financial Risk Management (FRM) - Level 2 Candidate",
-      "Chartered Financial Analyst (CFA) - Level 1 Candidate",
-      "Bloomberg Market Concepts",
-      "Corporate Finance Foundations"
+      {
+        "name": "IFIC",
+        "date": "September 2025"
+      },
+      {
+        "name": "Financial Risk Management (FRM) - Level 1",
+        "date": "November 2022"
+      },
+      {
+        "name": "Financial Risk Management (FRM) - Level 2 Candidate",
+        "date": "May 2026"
+      },
+      {
+        "name": "Chartered Financial Analyst (CFA) - Level 1 Candidate",
+        "date": "August 2026"
+      },
+      {
+        "name": "Bloomberg Market Concepts"
+      },
+      {
+        "name": "Corporate Finance Foundations"
+      },
+      {
+        "name": "Intermediate Python"
+      }
     ],
     "associations": [
-      "Society of Petroleum Engineers",
-      "American Association of Drilling Engineers"
+      {
+        "name": "Society of Petroleum Engineers",
+        "date": "September 2016 - Present"
+      },
+      {
+        "name": "American Association of Drilling Engineers",
+        "date": "September 2016 - Present"
+      }
     ],
     "languages": [
       "Fluent in English"
