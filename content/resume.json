@@ -1,15 +1,15 @@
 {
   "experience": [
     {
-      "title": "Quantitative Developer",
-      "company": "Company Name",
-      "location": "New York, NY",
-      "startDate": "2024-01",
-      "endDate": "Present",
-      "description": "Developing robust financial models and integrating machine learning into trading strategies.",
+      "title": "Complaince officer",
+      "company": "Value Partners",
+      "location": "Winnipeg, MB, Canada",
+      "startDate": "2026-01",
+      "endDate": "2026-03",
+      "description": "Placeholder.",
       "bullets": [
-        "Built a full-stack macro financial dashboard.",
-        "Implemented data pipelines for FRED and SEC EDGAR."
+        "Placeholder.",
+        "Placeholder."
       ]
     }
   ],
