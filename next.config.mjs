@@ -1,5 +1,5 @@
 const repository = process.env.GITHUB_REPOSITORY ?? '';
-const [, repositoryName = ''] = repository.split('/');
+const [_owner, repositoryName = ''] = repository.split('/');
 const isUserOrOrgSite = repositoryName.endsWith('.github.io');
 const basePath = repositoryName && !isUserOrOrgSite ? `/${repositoryName}` : '';
 
@@ -8,7 +8,7 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
   basePath,
-  assetPrefix: basePath || undefined,
+  assetPrefix: basePath,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
