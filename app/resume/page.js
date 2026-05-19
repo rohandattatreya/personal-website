@@ -1,12 +1,18 @@
 import resumeData from '../../content/resume.json';
 
 export default function Resume() {
+  const personalDetails = [
+    resumeData.personal.location,
+    resumeData.personal.phone,
+    resumeData.personal.email,
+  ].filter(Boolean);
+
   const skillSections = [
-    { title: 'Financial Modeling & Analysis', items: resumeData.skills.modeling },
-    { title: 'Software', items: resumeData.skills.software },
-    { title: 'Certifications', items: resumeData.skills.certifications },
-    { title: 'Associations', items: resumeData.skills.associations },
-    { title: 'Languages', items: resumeData.skills.languages },
+    { title: 'Financial Modeling & Analysis', items: resumeData.skills?.modeling },
+    { title: 'Software', items: resumeData.skills?.software },
+    { title: 'Certifications', items: resumeData.skills?.certifications },
+    { title: 'Associations', items: resumeData.skills?.associations },
+    { title: 'Languages', items: resumeData.skills?.languages },
   ].filter((section) => section.items && section.items.length > 0);
 
   return (
@@ -32,10 +38,12 @@ export default function Resume() {
           <h2 className="section-title" style={{ marginTop: 0, marginBottom: '1rem' }}>
             {resumeData.personal.name}
           </h2>
-          <div style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-            {resumeData.personal.location} · {resumeData.personal.phone} · {resumeData.personal.email}
-          </div>
-          <p style={{ margin: 0 }}>{resumeData.personal.summary}</p>
+          {personalDetails.length > 0 && (
+            <div style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
+              {personalDetails.join(' · ')}
+            </div>
+          )}
+          {resumeData.personal.summary && <p style={{ margin: 0 }}>{resumeData.personal.summary}</p>}
         </div>
       </section>
 
@@ -97,7 +105,7 @@ export default function Resume() {
                 <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>{section.title}</h4>
                 <ul style={{ listStyleType: 'none', padding: 0 }}>
                   {section.items.map((skill, index) => (
-                    <li key={index} style={{ marginBottom: '0.5rem' }}>{skill}</li>
+                    <li key={`${section.title}-${index}`} style={{ marginBottom: '0.5rem' }}>{skill}</li>
                   ))}
                 </ul>
               </div>
