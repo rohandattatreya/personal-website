@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import resumeData from '../content/resume.json';
 
 export default function Footer() {
+  const { personal } = resumeData;
+
   return (
     <footer style={{ marginTop: '4rem', padding: '2rem 0', borderTop: '1px solid var(--card-border)' }}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
@@ -10,7 +12,7 @@ export default function Footer() {
           <a href="https://github.com/rohandattatreya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/rohandattatreya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
           {/* Add more icons as needed */}
