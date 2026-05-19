@@ -1,32 +1,131 @@
 {
+  "personal": {
+    "name": "Rohan Dattatreya, MBA",
+    "location": "Winnipeg, MB, Canada",
+    "phone": "+1 (250) 797-4750",
+    "email": "rohan.dattatreya@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rohan-dattatreya",
+    "summary": "Resourceful and energetic finance professional with an MBA and a strong analytical background in engineering. Passionate about financial markets with a particular focus on portfolio management, risk mitigation, and regulatory compliance. Proven track record in financial modeling, data-driven decision-making, and operational oversight within the Canadian wealth management and energy sectors. FRM Level 2 Candidate | CFA Candidate"
+  },
   "experience": [
     {
-      "title": "Complaince officer",
-      "company": "Value Partners",
-      "location": "Winnipeg, MB, Canada",
+      "title": "Compliance Associate",
+      "company": "Value Partners Investments",
+      "location": "Winnipeg, Manitoba",
       "startDate": "2026-01",
-      "endDate": "2026-03",
-      "description": "Placeholder.",
+      "endDate": "2026-04",
+      "description": "",
       "bullets": [
-        "Placeholder.",
-        "Placeholder."
+        "Managed regulatory compliance reviews across mutual fund and wealth management operations, ensuring adherence to CSA and MFDA requirements for KYC/AML and trade surveillance.",
+        "Coordinated the preparation and filing of critical regulatory documents, including the Prospectus, Annual Information Form (AIF), Fund Facts, and Offering Memorandums.",
+        "Audited marketing and client-facing materials for regulatory accuracy and disclosure compliance, reducing firm-wide risk while strengthening investor communications.",
+        "Monitored portfolio transactions and client activity to identify and remediate regulatory breaches and operational control gaps.",
+        "Monitored evolving securities regulations and internal policies, providing actionable updates to the Executive team and Board of Directors."
+      ]
+    },
+    {
+      "title": "Associate – Intern",
+      "company": "Incorrys",
+      "location": "Calgary, Alberta",
+      "startDate": "2024-06",
+      "endDate": "2026-01",
+      "description": "",
+      "bullets": [
+        "Developed financial models, providing valuation estimates to help energy sector clients narrow down acquisition targets, ultimately supporting strategic investment decisions.",
+        "Identified business development opportunities by building and nurturing client relationships, seeking out tenders on offer and assisted in estimating bids.",
+        "Analyzed large financial datasets to create forecasting models for hydrocarbon demand and used a variety of drivers used to conduct sensitivity analysis."
+      ]
+    },
+    {
+      "title": "Advisor (Consultant) – Consulting Group",
+      "company": "Solomon Associates",
+      "location": "Dallas, TX",
+      "startDate": "2020-10",
+      "endDate": "2021-02",
+      "description": "",
+      "bullets": [
+        "Participated in to development of a New Projects OPEX Estimator, enhancing project cost accuracy and enabling the successful launch of a new product line at Solomon.",
+        "Developed data models and contributed to KPI monitoring tools for Integrated and National Oil Companies, enabling data-driven capex allocation, and optimizing financial performance.",
+        "Worked with National Oil Companies and developed models to analyze performance monitoring solutions for greenhouse gas emission optimization.",
+        "Created a consolidated datasets of Upstream KPI’s for Solomon’s Offshore Study. Standardized and consolidated proprietary and public data from EIA, Argus/Platts, along with data collected from clients in raw form, which is to be used in Solomon’s benchmarking study.",
+        "Assisted the refining team in preparing for the Solomon Fuel Study, which is the key revenue generator for the firm. Proposed and implemented solutions to digitize and automate data collection process to improve margins by 3% by reducing both internal and external costs, allowing Solomon to reduce costs during a challenging macro environment."
+      ]
+    },
+    {
+      "title": "Data Engineering Consultant – Digital Transformation",
+      "company": "Solomon Associates",
+      "location": "Dallas, TX",
+      "startDate": "2019-07",
+      "endDate": "2020-10",
+      "description": "",
+      "bullets": [
+        "Collaborated with SMEs from various sectors of the oil and gas value chain (Upstream, midstream, downstream, and economic planning) to design and create monthly performance monitoring web application hosted on AWS for one of the world’s largest national oil companies.",
+        "Assisted in developed of data pipelines and calculation engines used to calculate proprietary KPI’s using Solomon’s proprietary model in accordance with best practices to optimize unit performance.",
+        "Analyzed crude oil assays to determine optimal selection of crude to forecast demand and price for refineries depending on their configuration.",
+        "Developed and delivered dynamic crude pricing models used in Solomon’s benchmarking study.",
+        "Traveled Internationally to client site and consulted with NOC’s and collected data used to optimize refinery and workforce performance. Presented findings and recommendations to the Executive Committee, and other decision makers.",
+        "Assisted in automation of ETL process as part of ongoing digital transformation initiative at Solomon, as the firm transitions from on prem to AWS."
+      ]
+    },
+    {
+      "title": "Intern: Strategic Energy Analyst – Consulting Group",
+      "company": "Solomon Associates",
+      "location": "Dallas, TX",
+      "startDate": "2019-01",
+      "endDate": "2019-07",
+      "description": "",
+      "bullets": [
+        "Collaborated with a multidisciplinary team on analysis and development of economic planning and forecasting models used in benchmarking study.",
+        "Analyzed crude assays using HCAMS. Developed models for forecasting crude oil pricing used to estimate refinery net cash margins.",
+        "Analyzed proprietary client production and other technical data to aid in development of OPEX cost estimation model.",
+        "Analyzed, and developed methodologies for a white paper on the implications of new regulations proposed by the Paris Climate Accords, and its effect on refineries competitiveness and sustainability.",
+        "Developed risk models to help clients quantify the impact of bunker fuel sulfur regulations, and its cost on shipping industry, and broader impact on the transport fuel markets."
       ]
     }
   ],
   "education": [
     {
-      "degree": "Degree Program",
-      "institution": "University Name",
-      "location": "Location",
-      "startDate": "2020-09",
-      "endDate": "2024-05",
-      "description": "Focus on quantitative finance and machine learning."
+      "degree": "Master of Business Administration",
+      "institution": "Vancouver Island University",
+      "location": "Nanaimo, BC",
+      "startDate": "",
+      "endDate": "2024",
+      "description": ""
+    },
+    {
+      "degree": "Bachelor of Science in Petroleum and Natural Gas Engineering",
+      "institution": "The Pennsylvania State University",
+      "location": "State College, PA",
+      "startDate": "",
+      "endDate": "2018",
+      "description": ""
     }
   ],
   "skills": {
-    "languages": ["Python", "JavaScript", "SQL", "C++"],
-    "frameworks": ["React", "Next.js", "FastAPI", "Pandas", "PyTorch"],
-    "tools": ["Docker", "Git", "Linux", "AWS"],
-    "domains": ["Capital Markets", "Risk Management", "Machine Learning", "Quantitative Research"]
+    "modeling": [
+      "Financial Modeling: Buy Out, Merger models, DCF, Forecasting",
+      "Optimization: Linear Programing, Portfolio Optimization",
+      "Risk Modeling: Credit Risk, Enterprise Risk Management"
+    ],
+    "software": [
+      "Expert Excel",
+      "Intermediate Python",
+      "Working knowledge SQL"
+    ],
+    "certifications": [
+      "IFIC",
+      "Financial Risk Management (FRM) - Level 1",
+      "Financial Risk Management (FRM) - Level 2 Candidate",
+      "Chartered Financial Analyst (CFA) - Level 1 Candidate",
+      "Bloomberg Market Concepts",
+      "Corporate Finance Foundations"
+    ],
+    "associations": [
+      "Society of Petroleum Engineers",
+      "American Association of Drilling Engineers"
+    ],
+    "languages": [
+      "Fluent in English"
+    ]
   }
 }
